@@ -1,5 +1,5 @@
 {
-	"loader": "forge:composite",
+	"loader": "neoforge:composite",
 	"texture_size": [32, 32],
 	"item_render_order": [
 		"machine",

@@ -34,10 +34,13 @@ public class SetRandomPotionFunction extends LootItemConditionalFunction {
     }
 
     @Override
-    protected ItemStack run(ItemStack pStack, LootContext pContext) {
+    protected @NotNull ItemStack run(@NotNull ItemStack pStack, LootContext pContext) {
         Optional<Holder.Reference<Potion>> potionOptional;
-        while ((potionOptional = BuiltInRegistries.POTION.getRandom(pContext.getRandom())).isPresent() /*&& potionOptional.get().is(PotionContents.EMPTY)*/);
+        System.out.println("i HAVE BEEN SUMMONED before potion");
+        potionOptional = BuiltInRegistries.POTION.getRandom(pContext.getRandom());
 
+        //while ((potionOptional = BuiltInRegistries.POTION.getRandom(pContext.getRandom())).isPresent() /*&& potionOptional.get().is(PotionContents.EMPTY)*/);
+        System.out.println("i HAVE BEEN SUMMONED after potion");
         return potionOptional.map(potion -> PotionContents.createItemStack(pStack.getItem(), potion)).get();
     }
 
@@ -52,12 +55,12 @@ public class SetRandomPotionFunction extends LootItemConditionalFunction {
 
     public static final class Builder extends LootItemConditionalFunction.Builder<Builder> {
         @Override
-        protected Builder getThis() {
+        protected @NotNull Builder getThis() {
             return this;
         }
 
         @Override
-        public LootItemFunction build() {
+        public @NotNull LootItemFunction build() {
             return new SetRandomPotionFunction(getConditions());
         }
     }

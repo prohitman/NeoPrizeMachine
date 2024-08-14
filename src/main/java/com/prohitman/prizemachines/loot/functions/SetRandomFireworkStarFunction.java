@@ -38,9 +38,10 @@ public class SetRandomFireworkStarFunction extends LootItemConditionalFunction {
     }
 
     @Override
-    protected ItemStack run(ItemStack pStack, LootContext pContext) {
+    protected @NotNull ItemStack run(ItemStack pStack, LootContext pContext) {
         if (pStack.is(Items.FIREWORK_STAR)) {
             pStack.set(DataComponents.FIREWORK_EXPLOSION, generateExplosion(pContext.getRandom()));
+            System.out.println("i HAVE BEEN SUMMONED");
         } else if (pStack.is(Items.FIREWORK_ROCKET)) {
             RandomSource random = pContext.getRandom();
             int numExplosions = random.nextInt(1, 4);
@@ -52,6 +53,7 @@ public class SetRandomFireworkStarFunction extends LootItemConditionalFunction {
 
             Fireworks fireworks = new Fireworks(Util.getRandom(durations, random), fireworkExplosions);
             pStack.set(DataComponents.FIREWORKS, fireworks);
+            System.out.println("i HAVE BEEN SUMMONED as well");
         }
 
         return pStack;
@@ -94,12 +96,12 @@ public class SetRandomFireworkStarFunction extends LootItemConditionalFunction {
     public static final class Builder extends LootItemConditionalFunction.Builder<Builder> {
 
         @Override
-        protected Builder getThis() {
+        protected @NotNull Builder getThis() {
             return this;
         }
 
         @Override
-        public LootItemFunction build() {
+        public @NotNull LootItemFunction build() {
             return new SetRandomFireworkStarFunction(getConditions());
         }
     }
