@@ -1,0 +1,10 @@
+{
+  "type": "prizemachines:loot_table_inject",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:entities/zombie_villager"
+    }
+  ],
+  "loot_table": "prizemachines:injected/uncommon_prize_tokens"
+}

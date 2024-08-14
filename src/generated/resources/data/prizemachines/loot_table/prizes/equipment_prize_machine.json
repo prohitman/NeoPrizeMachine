@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:dynamic",
+          "name": "prizemachines:equipment",
+          "weight": 100
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "prizemachines:prizes/items_with_potions"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "prizemachines:prizes/items_with_potions"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "prizemachines:prizes/items_with_potions"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "prizemachines:set_random_firework_star"
+            }
+          ],
+          "name": "minecraft:firework_star"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "name": "minecraft:book"
+        }
+      ],
+      "name": "base_pool",
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "prizemachines:prizes/equipment_prize_machine"
+}

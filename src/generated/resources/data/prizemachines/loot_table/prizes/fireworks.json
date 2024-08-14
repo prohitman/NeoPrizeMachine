@@ -1,0 +1,162 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "components": {
+                "minecraft:fireworks": {
+                  "explosions": [
+                    {
+                      "shape": "small_ball"
+                    }
+                  ],
+                  "flight_duration": 1
+                }
+              },
+              "function": "minecraft:set_components"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "components": {
+                "minecraft:fireworks": {
+                  "explosions": [
+                    {
+                      "shape": "small_ball"
+                    }
+                  ],
+                  "flight_duration": 2
+                }
+              },
+              "function": "minecraft:set_components"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "components": {
+                "minecraft:fireworks": {
+                  "explosions": [
+                    {
+                      "shape": "small_ball"
+                    }
+                  ],
+                  "flight_duration": 3
+                }
+              },
+              "function": "minecraft:set_components"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "prizemachines:set_random_firework_star"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "prizemachines:set_random_firework_star"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "prizemachines:set_random_firework_star"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "components": {
+                "minecraft:fireworks": {
+                  "explosions": [
+                    {
+                      "shape": "small_ball"
+                    }
+                  ],
+                  "flight_duration": 1
+                }
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "function": "prizemachines:set_random_firework_star"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "components": {
+                "minecraft:fireworks": {
+                  "explosions": [
+                    {
+                      "shape": "small_ball"
+                    }
+                  ],
+                  "flight_duration": 2
+                }
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "function": "prizemachines:set_random_firework_star"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "components": {
+                "minecraft:fireworks": {
+                  "explosions": [
+                    {
+                      "shape": "small_ball"
+                    }
+                  ],
+                  "flight_duration": 3
+                }
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "function": "prizemachines:set_random_firework_star"
+            }
+          ],
+          "name": "minecraft:firework_rocket"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "prizemachines:prizes/fireworks"
+}
