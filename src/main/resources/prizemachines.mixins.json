@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.prohitman.prizemachines.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "prizemachines.refmap.json",
+  "mixins": [
+    "MonsterRoomFeatureMixin",
+    "StructureTemplatePoolAccessor"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
