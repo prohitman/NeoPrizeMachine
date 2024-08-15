@@ -3,7 +3,6 @@ package com.prohitman.prizemachines;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class Config {
-
     private static ModConfigSpec.BooleanValue dungeonsHavePrizeMachines;
     private static ModConfigSpec.DoubleValue prizeMachineDungeonChance;
 

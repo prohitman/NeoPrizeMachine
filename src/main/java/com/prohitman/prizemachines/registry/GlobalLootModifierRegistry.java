@@ -1,6 +1,5 @@
 package com.prohitman.prizemachines.registry;
 
-import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.prohitman.prizemachines.PrizeMachines;
 import com.prohitman.prizemachines.loot.modifiers.LootTableLootModifier;

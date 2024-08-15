@@ -2,14 +2,11 @@ package com.prohitman.prizemachines.datagen;
 
 import com.prohitman.prizemachines.PrizeMachines;
 import com.prohitman.prizemachines.registry.BlockRegistry;
-import it.unimi.dsi.fastutil.Function;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
 
 import java.util.Map;
 import java.util.Set;

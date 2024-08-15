@@ -1,6 +1,5 @@
 package com.prohitman.prizemachines.loot.modifiers;
 
-import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
@@ -39,9 +38,4 @@ public class LootTableLootModifier extends LootModifier {
     public MapCodec<? extends IGlobalLootModifier> codec() {
         return CODEC;
     }
-
-    /*@Override
-    public Codec<? extends IGlobalLootModifier> codec() {
-        return CODEC;
-    }*/
 }

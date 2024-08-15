@@ -4,20 +4,18 @@ import com.mojang.datafixers.util.Pair;
 import com.prohitman.prizemachines.mixin.StructureTemplatePoolAccessor;
 import com.prohitman.prizemachines.registry.*;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement;
 import net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement;
 import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
-import net.neoforged.fml.ModLoadingContext;
-import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
-
-import net.minecraft.core.registries.Registries;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 
 import java.util.ArrayList;
 import java.util.List;
