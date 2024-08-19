@@ -41,7 +41,11 @@ public class ModItemTagGen extends ItemTagsProvider {
                         Items.KNOWLEDGE_BOOK,
                         Items.FIREWORK_ROCKET,
                         Items.FIREWORK_STAR,
-                        Items.DRAGON_EGG
+                        Items.DRAGON_EGG,
+                        Items.PLAYER_HEAD,
+                        Items.BEDROCK,
+                        Items.END_PORTAL_FRAME,
+                        Items.REINFORCED_DEEPSLATE
                 )
                 .add(BuiltInRegistries.ITEM.stream().filter(item -> item instanceof SpawnEggItem).toArray(Item[]::new))
                 .add(
